@@ -3,8 +3,6 @@ import Filters from "./Components/Filters/Filters";
 import ProductsList from "./Components/products/ProductsList";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
-
 function App() {
   const [filters, setFilters] = useState({
     product: "",

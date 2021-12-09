@@ -4,7 +4,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
-  width: 70vw;
+  width: 72vw;
 }
 .products h6 {
   color: #ffffff;
@@ -12,6 +12,13 @@
 .companyName {
   width: 100%;
   text-align: left;
+}
+.carouselDiv{
+  background-color: #131313;
+  border-radius: 15px;
+  width:70vw;
+  padding:1rem 0.2rem;
+  padding-bottom: 0.5rem;
 }
 .productContainer {
   /* width: 70vw; */
@@ -23,6 +30,15 @@
   flex-direction: row;
   gap:1rem;
   align-items: center;
-  flex-wrap: wrap;
-  overflow-x:visible;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* overflow-x:visible; */
+}
+@media(max-width:768px){
+  .products{
+    width:70vw;
+  }
+  .carouselDiv{
+    width:80vw;
+  }
 }

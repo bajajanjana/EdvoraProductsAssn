@@ -1,6 +1,14 @@
 import React from "react";
 import styles from "./ProductList.module.css";
 import ProductItem from "./ProcuctItem";
+import Carousel from "react-elastic-carousel";
+const breakPoints=[
+    {width:1,itemsToShow:1},
+    {width:550,itemsToShow:2},
+    {width:768,itemsToShow:3},
+    {width:1200,itemsToShow:4},
+  ];
+
 function ProductsList(props) {
   
   return (
@@ -16,14 +24,19 @@ function ProductsList(props) {
           }}
         />
       </div>
-      <div className={styles.productContainer}>
+      <div className={styles.carouselDiv} id="carousel_div">
+      <Carousel breakPoints={breakPoints}>
         {props.filteredList.length === 0 &&
             props.initialProductList.map((item) => {
               if (item.product_name === props.companyName)
                 return (
+                  <>
                   <ProductItem product={item} />
+                  </>
                 );
-              else return null;
+              else 
+              {
+                return null};
             })} 
         {props.filteredList.map((item) => {
           if (item.product_name === props.companyName)
@@ -32,8 +45,10 @@ function ProductsList(props) {
             <ProductItem product={item} />
             </>
           );
-          else return null;
+          else{
+            return null};
         })}
+      </Carousel>
       </div>
     </div>
   );

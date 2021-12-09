@@ -3,6 +3,7 @@ import styles from "./ProductItem.module.css";
 
 function ProductItem(props) {
     return (
+        <div className={styles.product_outer_div}>
         <div className={styles.productItem}>
             <div className={styles.div1}>
                 <img src={props.product.image} width="70px" height="70px"></img>
@@ -26,6 +27,7 @@ function ProductItem(props) {
                     <p>{props.product.discription}</p>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

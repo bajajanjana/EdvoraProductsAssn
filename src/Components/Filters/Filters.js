@@ -52,7 +52,7 @@ function Filters(props) {
               props.filterUpdater("product", e.target.value);
             }}
           >
-            <option selected>Product</option>
+            <option selected disabled>Product</option>
             {productList.map((item) => {
               return <option value={item}>{item}</option>;
             })}
@@ -69,7 +69,7 @@ function Filters(props) {
               props.filterUpdater("state", e.target.value);
             }}
           >
-            <option selected>State</option>
+            <option selected disabled>State</option>
             {stateList.map((item) => {
               return <option value={item}>{item}</option>;
             })}
@@ -86,7 +86,7 @@ function Filters(props) {
               props.filterUpdater("city", e.target.value);
             }}
           >
-            <option value="2" selected>
+            <option value="2" selected disabled>
               City
             </option>
             {cityList.map((item) => {
