@@ -63,6 +63,10 @@
   word-wrap: break-word;
   line-height: 0.8rem;
 }
+.date p{
+  word-wrap: break-word;
+  line-height: 0.8rem;
+}
 @media(max-width:768px){
   .productItem {
     width:75vw;

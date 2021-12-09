@@ -19,7 +19,7 @@ function ProductItem(props) {
                     <p>{props.product.address.state}</p>
                     <p>{props.product.address.city}</p>
                     </div>
-                    <div>
+                    <div  className={styles.date}>
                     <p>Date: {props.product.date.substr(0,10)}</p>
                     </div>
                 </div>
