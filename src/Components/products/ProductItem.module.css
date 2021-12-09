@@ -65,6 +65,6 @@
 }
 @media(max-width:768px){
   .productItem {
-    width:17rem;
+    width:auto;
   }
 }
