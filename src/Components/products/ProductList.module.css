@@ -1,0 +1,28 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 70vw;
+}
+.products h6 {
+  color: #ffffff;
+}
+.companyName {
+  width: 100%;
+  text-align: left;
+}
+.productContainer {
+  /* width: 70vw; */
+  /* height: 11.87rem; */
+  background: #131313;
+  border-radius: 15px;
+  padding:1rem;
+  display: flex;
+  flex-direction: row;
+  gap:1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-x:visible;
+}
